@@ -1,9 +1,13 @@
 const request = require('superagent');
+const Promise = require('./promises');
 
 getCharacter() {
   
 }
 
+getCharacters() {
+
+}
 // const getCharacter = id => {
 //   return request
 //     .get(`https://rickandmortyapi/com/api/character/${id}`)
