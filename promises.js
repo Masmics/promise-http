@@ -1,15 +1,8 @@
-const fsPromises = require('fs').promises;
 const fs = require('fs');
-const readIt = ('./.gitignore');
-
+const readIt = require('./http.md');
 // pending state - waiting for promise to finish
 // fulfilled - finished and resolved
 // rejected - finished and rejected
-
-fsPromises.readFile(readIt, { encoding: 'utf8' })
-  .then(data => fsPromises.writeFile('test.txt', data))
-  .then(console.log('DONE'))
-  .catch(err => console.error(err));
 
 const readPromise = src => new Promise((resolve, reject) => {
   fs.readFile(src, { encoding: 'utf8' }, (err, data) => {
@@ -20,5 +13,4 @@ const readPromise = src => new Promise((resolve, reject) => {
 
 readPromise(readIt)
   .then(data => console.log(data));
-
 

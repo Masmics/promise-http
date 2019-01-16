@@ -22,7 +22,8 @@
   "homepage": "https://github.com/Masmics/promise-http#readme",
   "devDependencies": {
     "eslint": "^5.12.0",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "superagent": "^4.1.0"
   },
   "dependencies": {
     "shortid": "^2.2.14"

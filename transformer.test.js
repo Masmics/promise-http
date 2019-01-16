@@ -1,5 +1,4 @@
 const transformer = require('./transformer');
-//const fsPromises = require('fs').promises;
 
 describe('transformer', () => {
   it('removes capital letters', () => {

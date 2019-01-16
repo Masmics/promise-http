@@ -1,5 +1,4 @@
-const copy = require('./promises.js');
-const fs = require('fs');
+const copy = require('./copy.js');
 const fsPromises = require('fs').promises;
 //
 describe('copy', () => {
