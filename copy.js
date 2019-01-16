@@ -1,9 +1,9 @@
-// const fsPromises = require('fs').promises;
+const fsPromises = require('fs').promises;
 
-// module.exports = (src, dst) => {
+module.exports = (src, dst) => {
 
-//   fsPromises.readFile(src)
-//     .then(data => fsPromises.writeFile(dst, data))
-//     .then(console.log('copied it!'))
-//     .catch(err => console.error(err));
-// };
+  fsPromises.readFile(src)
+    .then(data => fsPromises.writeFile(dst, data))
+    .then(console.log('copied it!'))
+    .catch(err => console.error(err));
+};

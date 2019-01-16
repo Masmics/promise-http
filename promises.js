@@ -21,4 +21,4 @@ const readPromise = src => new Promise((resolve, reject) => {
 readPromise(readIt)
   .then(data => console.log(data));
 
-  
+

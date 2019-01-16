@@ -14,5 +14,5 @@ describe('transformer', () => {
   it('trims spaces from the string', () => {
     expect(transformer.trim('EREH I')).toEqual('EREHI');
   });
-  //expect(transformer('Hi There')).toEqual('EREHI');
+  expect(transformer('Hi There')).toEqual('EREHI');
 });

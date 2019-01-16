@@ -9,10 +9,10 @@ jest.mock('../service/__mock__/rickAndMortyApi.js', () => ({
   //     species: 'human',
   //     status: 'alive'
   //   });
-    // return rickRole.getCharacter(id)
-    //   .get('id')
-    //   .then()
-  }
+  // return rickRole.getCharacter(id)
+  //   .get('id')
+  //   .then()
+  //}
 }));
 
 describe('app', () => {
