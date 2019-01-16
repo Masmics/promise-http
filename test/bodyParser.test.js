@@ -1,4 +1,4 @@
-const bodyParser = require('./bodyparser');
+const bodyParser = require('../lib/bodyParser.js');
 const EventEmitter = require('events');
 
 describe('bodyParser', () => {
