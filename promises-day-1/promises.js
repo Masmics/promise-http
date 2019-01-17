@@ -1,5 +1,4 @@
 const fs = require('fs');
-const readIt = require('../http.md');
 // pending state - waiting for promise to finish
 // fulfilled - finished and resolved
 // rejected - finished and rejected
@@ -11,6 +10,6 @@ const readPromise = src => new Promise((resolve, reject) => {
   });
 });
 
-readPromise(readIt)
+readPromise('../http.md')
   .then(data => console.log(data));
 

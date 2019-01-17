@@ -7,12 +7,12 @@ describe('copy', () => {
   });
 
   it('copies from src and write it to dst', () => {
-    return copy('./http.md', '/http-copy.md') ()
+    return copy('../http.md', '/http-copy.md')
       .then(() => {
         //expect(fs.readFileSync('./.gitignore')).toEqual(fs.readFileSync('./test.txt))
         
         return Promise.all([
-          fsPromises.readFile('./http.md'),
+          fsPromises.readFile('../http.md'),
           fsPromises.readFile('./http-copy.md')
         ]);
       })
