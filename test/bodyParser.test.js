@@ -5,7 +5,7 @@ describe('bodyParser', () => {
   it('parses a request body', () => {
     const req = new EventEmitter;
     req.headers = {};
-    req.getHeader = () => 'application/json';
+    req.getHeader = () => ('Content-Type', 'application/json');
     req.method = 'POST';
 
     const promise = bodyParser(req)

@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('./app');
+const app = require('../lib/app');
 //const rickRole = require('./services/rickAndMortyApi.js');
 
 jest.mock('../lib/service/rickAndMortyApi.js');
@@ -11,8 +11,8 @@ describe('app', () => {
       .then(res => {
         expect(res.body).toEqual({
           name: 'Rick Sanchez',
-          species: 'human',
-          status: 'alive'
+          species: 'Human',
+          status: 'Alive'
         });
       });
   });

@@ -26,6 +26,7 @@
     "superagent": "^4.1.0"
   },
   "dependencies": {
-    "shortid": "^2.2.14"
+    "shortid": "^2.2.14",
+    "supertest": "^3.4.1"
   }
 }
