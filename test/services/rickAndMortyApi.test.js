@@ -9,8 +9,8 @@ describe('R+M service', () => {
       .then(character => {
         expect(character).toEqual({
           name: 'Rick Sanchez',
-          species: 'human',
-          status: 'alive'
+          species: 'Human',
+          status: 'Alive'
         });
       });
   });
